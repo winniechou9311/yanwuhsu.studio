@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Functions</h1>
+    <h2>Callback Functions</h2>
+
+    <p>The result of the calculation is:</p>
+    <p id="demo"></p>
+
+    <hr/>
+
+
+    <script>
+    // Callback Functions
+      function myDisplayer(something) {
+        document.getElementById("demo").innerHTML = something;
+      }
+
+      function myCalculator(num1, num2, myCallback) {
+        let sum = num1 + num2;
+        myCallback(sum);
+      }
+
+      myCalculator(5, 5, myDisplayer);
+    // Callback Functions
+
+        // Callback Functions
+        function myDisplayer(something) {
+        document.getElementById("demo").innerHTML = something;
+      }
+      function myAlert(something) {
+            alert(something);
+        }
+        function myConsole(something) {
+            console.log(something);
+        }
+
+      function myCalculator(num1, num2, myCallback) {
+        let sum = num1 + num2;
+        myCallback(sum);
+      }
+
+      myCalculator(5, 5, myAlert);
+    //myCalculator(5, 5, myConsole);
+      myCalculator(9, 5, myDisplayer);
+    //當您將函數做為參數傳遞時，請記住不要使用括號
+    //
+    </script>
+  </body>
+</html>

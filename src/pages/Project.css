@@ -1,0 +1,39 @@
+#Project { height: 100% } 
+/* 設定 app 元素的高度為畫面的 100% */
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+/* 設定 html 和 body 的高度為畫面的 100%，使其填滿整個畫面 */
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+/* 設定 body 的背景顏色、字型、字體大小、字體顏色，並且移除預設的 margin 和 padding */
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* 設定輪播容器 .swiper 的寬度為畫面的 100%，並在上方和下方各添加 50px 的 padding */
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+/* 設定每個輪播 slide 的背景位置為中心、背景大小為 cover（填滿容器），以及固定寬高為 300px */
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* 設定輪播 slide 中的圖片為區塊元素，寬度為 100%，以填滿 slide 的寬度 */

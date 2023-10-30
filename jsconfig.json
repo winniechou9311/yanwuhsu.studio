@@ -1,0 +1,5 @@
+{
+  "compilerOptions": { "baseUrl": "." },
+  "include": ["src", "backend"],
+  "exclude": ["node_modules", "build"]
+}
